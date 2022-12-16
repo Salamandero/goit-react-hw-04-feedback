@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
 import { NoFeedbackInfo } from './Notification.styled';
 
-const Notification = ({message}) =>{
-    return(<>
-        <NoFeedbackInfo>{message}</NoFeedbackInfo>
-        </>
-    )
-}
+const Notification = ({ message }) => {
+  return (
+    <>
+      <NoFeedbackInfo>{message}</NoFeedbackInfo>
+    </>
+  );
+};
 
 Notification.propTypes = {
-    message: PropTypes.string.isRequired,
-}
+  message: PropTypes.string.isRequired,
+};
 export default Notification;

@@ -2,7 +2,6 @@ import { BtnFeedback, BtnWrapper } from './FeedbackOption.styled';
 import PropTypes from 'prop-types';
 
 const FeedbackOption = ({ option, onLeaveFeedback }) => {
-
   return (
     <>
       <BtnWrapper>

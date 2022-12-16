@@ -12,7 +12,6 @@ class Feedback extends Component {
     bad: 0,
   };
 
-
   leaveFeedback = event => {
     const value = event.target.innerText;
     this.setState(prevState => ({ [value]: prevState[value] + 1 }));

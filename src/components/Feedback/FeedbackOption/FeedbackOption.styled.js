@@ -9,7 +9,6 @@ export const BtnWrapper = styled.div`
 export const BtnFeedback = styled.button`
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
   border: none;
   justify-content: center;
   cursor: pointer;
