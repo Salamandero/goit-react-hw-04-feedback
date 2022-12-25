@@ -21,10 +21,10 @@ class Feedback extends Component {
     this.state.good + this.state.neutral + this.state.bad;
   countPositiveFeedbackPercentage = () =>
     Math.round((this.state.good * 100) / this.countTotalFeedback());
-
   render() {
     const { good, neutral, bad } = this.state;
-    const option = ['good', 'neutral', 'bad'];
+    const option = Object.keys(this.state);
+
     return (
       <>
         <Section title="Please leave feedback">
