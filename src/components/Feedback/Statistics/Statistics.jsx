@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { StatWrapper, StatInfo } from './Statistics.styled';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
+  // console.log(positivePercentage);
   return (
     <>
       <StatWrapper>

@@ -6,7 +6,11 @@ const FeedbackOption = ({ option, onLeaveFeedback }) => {
     <>
       <BtnWrapper>
         {option.map(el => (
-          <BtnFeedback key={el} type="button" onClick={onLeaveFeedback}>
+          <BtnFeedback
+            key={el}
+            type="button"
+            onClick={() => onLeaveFeedback(el)}
+          >
             {el}
           </BtnFeedback>
         ))}
